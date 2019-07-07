@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Aara</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+
+  <body>
+    <nav class="cyan darken-4" role="navigation">
+      <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">Aara</a>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+
+      <div class="container">
+        <br><br>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_balance_wallet</i>
+                <input value="0xF0AD5cAd05e10572EfcEB849f6Ff0c68f9700455" id="addressId" type="text">
+                <label for="addressId">Address</label>
+              </div>
+              <div class="input-field col s4">
+                <input value="NameRegistered" id="eventName" type="text">
+                <label for="eventName">Event Name</label>
+              </div>
+              <button class="btn waves-effect waves-light z-depth-3" type="button" id="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <div class="progress" style="display:none;">
+            <div class="indeterminate"></div>
+          </div>
+          <table id="events" class="centered highlight">
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="static/events.js"></script>
+
+  </body>
+</html>
